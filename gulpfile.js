@@ -11,6 +11,7 @@ var rename = require("gulp-rename");
 var imagemin  = require("gulp-imagemin");
 var del = require("del");
 var run = require("run-sequence");
+var bootstrap = require("bootstrap");
 
 gulp.task("images", function() {
   return gulp.src("source/img/*.{png,jpg,svg}")
