@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__menu-wrapper">
+       <img src="" alt="" class="page-header__logo">
+       <label class="page-heade__menu-switch">
+         <input type="checkbox" name="menu" id="menu__switch">
+       </label>
+     </div>
+    <nav class="page-header--menu">
+      <a href="#" class="page-header__item page-header__item--catalog">каталог</a>
+      <a href="#" class="page-header__item page-header__item--knitting">вязание</a>
+      <a href="#" class="page-header__item page-header__item--search">поиск по сайту</a>
+      <a href="#" class="page-header__item page-header__item--cart">корзина</a>
+    </nav>
+    <div class="page-header__submenu">
+      <div class="page-header__new">Новые поступления</div>
+      <div class="page-header__sale">Распродажа</div>
+      <span class="page-header__shipping">бесплатная доставка по России</span>
+    </div>
+  </header>
+  <main class="page-catalog">
+    <div class="page-catalog__caption-wrapper">
+      <h1 class="page-catalog__caption">Каталог</h1>
+    </div>
+    <section class="catalog">
+      <article class="catalog__item catalog__item--1">
+        <img src="#" alt="Зайчик-попрыгайчик">
+        <span class="catalog__item-caption">Зайчик-попрыгайчик</span>
+        <span class="catalog__item-description">Рост 30см, вес 200г</span>
+        <div class="catalog__item-bottom">
+          <small class="catalog__item-cost">1200 руб.</small>
+          <a href="#" class="catalog__item-order"></a>
+        </div>
+      </article>
+      <article class="catalog__item catalog__item--2">
+        <img src="#" alt="Корзинка для белья">
+        <span class="catalog__item-caption">Корзинка для белья</span>
+        <span class="catalog__item-description">Диаметра 15 см, высота 0 см</span>
+        <div class="catalog__item-bottom">
+          <small class="catalog__item-cost">690 руб.</small>
+          <a href="#" class="catalog__item-order"></a>
+        </div>
+      </article>
+      <article class="catalog__item catalog__item--3">
+        <img src="#" alt="Большая корзинка для игрушек">
+        <span class="catalog__item-caption">Большая корзинка для игрушек</span>
+        <span class="catalog__item-description">Диаметр 30 см, высота 30см</span>
+        <div class="catalog__item-bottom">
+          <small class="catalog__item-cost">1500 руб.</small>
+          <a href="#" class="catalog__item-order"></a>
+        </div>
+      </article>
+    </section>
+    <section class="manufacturing">
+      <h2 class="manufacturing__caption">Процесс производства</h2>
+      <p class="manufacturing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a href="№" class="manufacturing__order button">делать заказ </a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts">
+      <table class="contacts__table">
+        <tr class="contacts__table-row">
+          <td class="contacts__table-col">e-mail:</td>
+          <td class="contacts__table-col">info@mimimishkashop.ru</td>
+        </tr>
+      </table>
+      <table class="contacts__table">
+        <tr class="contacts__table-row">
+          <td class="contacts__table-col">Адрес:</td>
+          <td class="contacts__table-col">Санкт-Петербург,
+ул. Большая Конюшенная,
+д. 19/8, офис 101</td>
+        </tr>
+      </table>
+      <a href="" class="contacts__button button">напишите нам</a>
+    </section>
+  <div class="map" id="map"></div>
+  <div class="page-footer__bottom">
+    <div class="page-footer__bottom-link"><a href="#" class="page-footer__link"></a></div>
+      <div class="page-footer__social social">
+        <a href="#" class="social__item social__item--inst"></a>
+        <a href="#" class="social__item social__item--fb"></a>
+        <a href="#" class="social__item social__item--vk"></a>
+      </div>
+    <div class="page-footer__bottom-developers developers">
+      <a href="#" class="developers__item developers__item--">Разработано</a>
+      <a href="#" class="developers__item developers__item--"></a>
+    </div>
+  </div>
+  </footer>
+  <artice class="modal">
+    <h2 class="modal__caption">добавить в корзину</h2>
+    <small class="modal__choice">выберете размер</small>
+    <label for="" class="modal__item1">S
+      <input type="radio" name="small" id="small" checked>
+    </label>
+    <label for="" class="modal__item2">M
+      <input type="radio" name="medium" id="medium">
+    </label>
+    <label for="" class="modal__item3">L
+      <input type="radio" name="large" id="large">
+    </label>
+    <a href="#" class="modal__send button">Добавить</a>
+  </artice>
+</body>
+</html>

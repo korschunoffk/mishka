@@ -3,33 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <div class="page-header__nav-wrapper">
-      <ul class="page-header__list">
-        <li class="page-header__item"><a href="#" class="page-header__link">1</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">2</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">3</a></li>
-        <li class="page-header__item"><a href="#" class="page-header__link">4</a></li>
-      </ul>
+    <div class="page-header__menu-wrapper">
+       <img src="" alt="" class="page-header__logo">
+       <label class="page-heade__menu-switch">
+         <input type="checkbox" name="menu" id="menu__switch">
+       </label>
+     </div>
+    <nav class="page-header--menu">
+      <a href="catalog.html" class="page-header__item page-header__item--catalog">каталог</a>
+      <a href="form.html" class="page-header__item page-header__item--knitting">вязание</a>
+      <a href="#" class="page-header__item page-header__item--search">поиск по сайту</a>
+      <a href="#" class="page-header__item page-header__item--cart">корзина</a>
+    </nav>
+    <div class="page-header__submenu">
+      <div class="page-header__new">Новые поступления</div>
+      <div class="page-header__sale">Распродажа</div>
+      <span class="page-header__shipping">бесплатная доставка по России</span>
     </div>
   </header>
   <main class="page-main">
-    <div class="example-bs">
-      <div class="row">
-        <h3>хуй</h3>
-      </div>
-      <div class="row">
-        <div class="col">1 bp2</div>
-        <div class="col">2 bp2</div>
-      </div>
-    </div>
+    <section class="promo">
+      <h1 class="promo--caption">милые штучки ручной работы для дома</h1>
+      <article class="promo--item promo--item__interior">предметы интерьера</article>
+      <article class="promo--item promo--item__toys">детские игрушки</article>
+    </section>
+    <section class="week-promo">
+      <h2 class="week-promo__caption">Вязанные корзинки</h2>
+      <h3 class="week-promo__goods">товар недели</h3>
+      <p class="week-promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <table class="week-promo__table table">
+        <tr class="table__row">
+          <td class="table__column">Цвет</td>
+          <td class="table__column"></td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__column">Диаметр</td>
+          <td class="table__column"></td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__column">Высота</td>
+          <td class="table__column"></td>
+        </tr>
+      </table>
+      <img src="#" alt="" class="week-promo__knitted-box">
+      <span class="week-promo__cost">Цена:990руб.</span>
+      <a href="#" class="week-promo__order button">заказать</a>
+    </section>
+    <section class="about-us">
+      <h2 class="about-us__caption">Коротко о нас:</h2>
+      <ul class="about-us__list">
+        <li class="about-us__item about-us__item--1">Экологически чистые материалы</li>
+        <li class="about-us__item about-us__item--2">Скандинавский стиль по российской цене</li>
+        <li class="about-us__item about-us__item--3">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__item about-us__item--4">Связано вручную с любовью и умилением</li>
+        <li class="about-us__item about-us__item--5">Поддержка отечественного производителя</li>
+        <li class="about-us__item about-us__item--6">Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+    <section class="review">
+      <h2 class="review__caption">Отзывы</h2>
+      <p class="review--text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+      <span class="review--name">Анастасия Красильникова</span>
+      <span class="review--email">@misssssiskas</span>
+      <a href="" class="review__button review__button--left"></a>
+      <a href="" class="review__button review__button--right"></a>
+    </section>
   </main>
-  <footer class="page-footer"></footer>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+
+  <footer class="page-footer">
+    <section class="page-footer__contacts contacts">
+      <table class="contacts__table">
+        <tr class="contacts__table-row">
+          <td class="contacts__table-col">e-mail:</td>
+          <td class="contacts__table-col">info@mimimishkashop.ru</td>
+        </tr>
+      </table>
+      <table class="contacts__table">
+        <tr class="contacts__table-row">
+          <td class="contacts__table-col">Адрес:</td>
+          <td class="contacts__table-col">Санкт-Петербург,
+ул. Большая Конюшенная,
+д. 19/8, офис 101</td>
+        </tr>
+      </table>
+      <a href="" class="contacts__button button">напишите нам</a>
+    </section>
+  <div class="map" id="map"></div>
+  <div class="page-footer__bottom">
+    <div class="page-footer__bottom-link"><a href="#" class="page-footer__link"></a></div>
+      <div class="page-footer__social social">
+        <a href="#" class="social__item social__item--inst"></a>
+        <a href="#" class="social__item social__item--fb"></a>
+        <a href="#" class="social__item social__item--vk"></a>
+      </div>
+    <div class="page-footer__bottom-developers developers">
+      <a href="#" class="developers__item developers__item--">Разработано</a>
+      <a href="#" class="developers__item developers__item--"></a>
+    </div>
+  </div>
+  </footer>
+  <artice class="modal">
+    <h2 class="modal__caption">добавить в корзину</h2>
+    <small class="modal__choice">выберете размер</small>
+    <label for="" class="modal__item1">S
+      <input type="radio" name="small" id="small" checked>
+    </label>
+    <label for="" class="modal__item2">M
+      <input type="radio" name="medium" id="medium">
+    </label>
+    <label for="" class="modal__item3">L
+      <input type="radio" name="large" id="large">
+    </label>
+    <a href="#" class="modal__send button">Добавить</a>
+  </artice>
 </body>
 </html>
