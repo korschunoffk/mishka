@@ -1,0 +1,33 @@
+.promo {
+  background-image: url("../img/background-promo-mobile.jpg");
+  background-repeat:no-repeat;
+
+  @media(min-width:@tablet-width){
+    background-image: url("../img/background-promo-tablet.jpg");
+  }
+
+  @media(min-width:@desktop-width){
+    background-image: url("../img/background-promo-desktop.jpg");
+  }
+}
+.promo__caption {
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+
+  @media(min-width:@tablet-width){
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  @media(min-width:@desktop-width){
+    font-size: 53px;
+    line-height: 60px;
+  }
+}
+
+.promo__item {
+  font-size: 19px;
+  line-height: 30px;
+  color: white;
+}

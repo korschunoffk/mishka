@@ -9,26 +9,30 @@
 <body>
   <header class="page-header">
     <div class="page-header__menu-wrapper">
-       <img src="" alt="" class="page-header__logo">
+       <picture>
+            <source media="(min-width: 1050px)" srcset="img/mishka-logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.png">
+            <img class="page-header__logo" src="img/mishka-logo-mobile.png" alt="Логотип Mishka">
+          </picture>
        <label class="page-heade__menu-switch">
          <input type="checkbox" name="menu" id="menu__switch">
        </label>
      </div>
-    <nav class="page-header--menu">
-      <a href="#" class="page-header__item page-header__item--catalog">каталог</a>
-      <a href="#" class="page-header__item page-header__item--knitting">вязание</a>
-      <a href="#" class="page-header__item page-header__item--search">поиск по сайту</a>
-      <a href="#" class="page-header__item page-header__item--cart">корзина</a>
+    <nav class="page-header__menu">
+      <a href="catalog.html" class="page-header__item page-header__item--catalog">Каталог товаров</a>
+      <a href="form.html" class="page-header__item page-header__item--knitting">Вязание на заказ</a>
+      <a href="#" class="page-header__item page-header__item--search">Поиск по сайту</a>
+      <a href="#" class="page-header__item page-header__item--cart">Корзина: пока пуста </a>
     </nav>
     <div class="page-header__submenu">
       <div class="page-header__new">Новые поступления</div>
       <div class="page-header__sale">Распродажа</div>
-      <span class="page-header__shipping">бесплатная доставка по России</span>
+      <span class="page-header__shipping">Бесплатная доставка по России</span>
     </div>
   </header>
   <main class="page-form">
     <div class="page-form__caption-wrapper">
-      <h1 class="page-form__caption">Каталог</h1>
+      <h1 class="page-form__caption">Вязание на заказ</h1>
     </div>
     <p class="page-form__descriprion">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     <form method="post" action="https://echo.htmlacademy.ru" class="form">
@@ -81,15 +85,15 @@
       <div class="form__fio-wrapper">
         <label>
           <span class="form__fio-item">Имя:</span>
-          <input type="text" name="input-name" required>
+          <input type="text" name="input-name" placeholder="Введите ваше имя*" required>
         </label>
         <label>
           <span class="form__fio-item">Фамилия:</span>
-          <input type="text" name="input-surname" required>
+          <input type="text" name="input-surname" placeholder="Укажите фамилию" required>
         </label>
         <label>
           <span class="form__fio-item">Отчество:</span>
-          <input type="text" name="input-2nd-surname">
+          <input type="text" name="input-2nd-surname" placeholder="Отчество, если желаете">
         </label>
       </div>
     </div>
